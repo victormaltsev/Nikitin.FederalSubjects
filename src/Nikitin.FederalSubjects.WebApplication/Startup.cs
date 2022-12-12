@@ -1,6 +1,9 @@
 ﻿using HealthChecks.UI.Client;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
+using Microsoft.Extensions.WebEncoders;
 using Microsoft.OpenApi.Models;
+using System.Text.Encodings.Web;
+using System.Text.Unicode;
 
 namespace Nikitin.FederalSubjects.WebApplication;
 
@@ -16,6 +19,7 @@ public class Startup
     public void ConfigureServices(IServiceCollection services)
     {
         services.Configure<RouteOptions>(options => { options.LowercaseUrls = true; });
+        services.Configure<WebEncoderOptions>(options => { options.TextEncoderSettings = new TextEncoderSettings(UnicodeRanges.Cyrillic); });
 
         services.AddControllersWithViews().AddNewtonsoftJson();
 
