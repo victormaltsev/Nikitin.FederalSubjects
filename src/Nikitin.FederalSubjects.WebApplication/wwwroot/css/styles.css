@@ -1,0 +1,19 @@
+﻿body {
+    margin-left: 300px;
+}
+nav {
+    width: 300px;
+    min-height: 100vh;
+}
+nav svg.bi {
+    fill: currentColor;
+    pointer-events: none;
+    vertical-align: -0.25rem;
+    
+    width: 20px;
+    height: 20px;
+    margin-right: 0.5rem;
+}
+a {
+    text-decoration: none;
+}
