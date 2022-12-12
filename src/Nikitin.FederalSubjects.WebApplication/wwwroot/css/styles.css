@@ -15,6 +15,9 @@ nav svg.bi {
     height: 20px;
     margin-right: 0.5rem;
 }
+nav .nav-pills .nav-link {
+    border-radius: 0;
+}
 a {
     text-decoration: none;
 }
