@@ -12,7 +12,7 @@ public class VersionController : ControllerBase
 {
     [HttpGet]
     [SwaggerResponse(StatusCodes.Status200OK, Type = typeof(VersionResponse))]
-    public IActionResult GetVersion()
+    public IActionResult Version()
     {
         var version = Assembly.GetExecutingAssembly().GetName().Version?.ToString() ?? throw new NullReferenceException("version cannot be null");
         return Ok(new VersionResponse { Version = version });
