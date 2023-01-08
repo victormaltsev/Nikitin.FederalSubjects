@@ -8,9 +8,20 @@ namespace Nikitin.FederalSubjects.WebApplication.Controllers;
 [Produces(MediaTypeNames.Text.Html)]
 public class HomeController : Controller
 {
-    [HttpGet("/", Order = 1)]
-    [HttpGet("/index", Order = 2)]
+    [HttpGet("/")]
     public IActionResult Index()
+    {
+        return View();
+    }
+
+    [HttpGet("/index")]
+    public IActionResult IndexRedirect()
+    {
+        return RedirectToAction("Index");
+    }
+
+    [HttpGet("/map")]
+    public IActionResult Map()
     {
         return View();
     }
