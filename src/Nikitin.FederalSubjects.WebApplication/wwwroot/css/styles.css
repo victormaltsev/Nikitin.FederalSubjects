@@ -1,0 +1,23 @@
+﻿body {
+    font-family: 'Exo 2', sans-serif;
+    margin-left: 300px;
+}
+nav {
+    width: 300px;
+    min-height: 100vh;
+}
+nav svg.bi {
+    fill: currentColor;
+    pointer-events: none;
+    vertical-align: -0.25rem;
+    
+    width: 20px;
+    height: 20px;
+    margin-right: 0.5rem;
+}
+nav .nav-pills .nav-link {
+    border-radius: 0;
+}
+a {
+    text-decoration: none;
+}
