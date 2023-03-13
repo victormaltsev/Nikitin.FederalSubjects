@@ -3,6 +3,10 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{FB877C9C-A00F-46CF-98E9-6A0349C81819}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nikitin.FederalSubjects.WebService", "src\Nikitin.FederalSubjects.WebService\Nikitin.FederalSubjects.WebService.csproj", "{AECAC2D7-6B08-425A-9B64-023C4B4848CA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -10,5 +14,14 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AECAC2D7-6B08-425A-9B64-023C4B4848CA} = {FB877C9C-A00F-46CF-98E9-6A0349C81819}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AECAC2D7-6B08-425A-9B64-023C4B4848CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AECAC2D7-6B08-425A-9B64-023C4B4848CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AECAC2D7-6B08-425A-9B64-023C4B4848CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AECAC2D7-6B08-425A-9B64-023C4B4848CA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
