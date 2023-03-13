@@ -5,7 +5,7 @@ namespace Nikitin.FederalSubjects.Application.Repositories;
 public interface IFederalSubjectsRepository
 {
     Task<IReadOnlyList<FederalSubject>> GetAllSubjectsAsync();
-    Task<string> GetContentAsync(FederalSubjectId federalSubjectId);
+    Task<string?> GetContentAsync(FederalSubjectId federalSubjectId);
 }
 
 public record FederalSubject
