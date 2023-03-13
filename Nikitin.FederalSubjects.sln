@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nikitin.FederalSubjects.Dat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nikitin.FederalSubjects.Application", "src\Nikitin.FederalSubjects.Application\Nikitin.FederalSubjects.Application.csproj", "{708ACC72-2E47-46E8-8BEF-06F8B47D4271}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nikitin.FederalSubjects.Infrastructure", "src\Nikitin.FederalSubjects.Infrastructure\Nikitin.FederalSubjects.Infrastructure.csproj", "{1B25B901-7D1A-4C2D-84BA-BC401B6A6D87}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -28,6 +30,7 @@ Global
 		{FBE8E080-DC2B-4948-A56A-019E7DEAA9F6} = {99A9A941-4F4F-419D-A16D-3103A411503C}
 		{57453853-9F4B-4A47-A8D7-7A428AAFEBD9} = {FB877C9C-A00F-46CF-98E9-6A0349C81819}
 		{708ACC72-2E47-46E8-8BEF-06F8B47D4271} = {FB877C9C-A00F-46CF-98E9-6A0349C81819}
+		{1B25B901-7D1A-4C2D-84BA-BC401B6A6D87} = {FB877C9C-A00F-46CF-98E9-6A0349C81819}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{AECAC2D7-6B08-425A-9B64-023C4B4848CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -46,5 +49,9 @@ Global
 		{708ACC72-2E47-46E8-8BEF-06F8B47D4271}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{708ACC72-2E47-46E8-8BEF-06F8B47D4271}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{708ACC72-2E47-46E8-8BEF-06F8B47D4271}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B25B901-7D1A-4C2D-84BA-BC401B6A6D87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B25B901-7D1A-4C2D-84BA-BC401B6A6D87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B25B901-7D1A-4C2D-84BA-BC401B6A6D87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B25B901-7D1A-4C2D-84BA-BC401B6A6D87}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
