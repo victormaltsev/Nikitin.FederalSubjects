@@ -1,0 +1,1 @@
+dotnet ef dbcontext scaffold "server=localhost;username=postgres;password=signed123;database=Nikitin.FederalSubjects;" Npgsql.EntityFrameworkCore.PostgreSQL --project "Nikitin.FederalSubjects.Database" --context="AppDbContext" --context-dir "." --output-dir "Models" --no-onconfiguring --force
