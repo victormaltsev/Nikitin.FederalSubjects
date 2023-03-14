@@ -9,6 +9,10 @@ public class AppDbContext : DbContext
     public DbSet<FederalSubjectDbModel> FederalSubjects { get; set; } = null!;
     public DbSet<FederalSubjectTypeDbModel> FederalSubjectsTypes { get; set; } = null!;
 
+    public AppDbContext()
+    {
+    }
+
     public AppDbContext(DbContextOptions<AppDbContext> options)
         : base(options)
     {
