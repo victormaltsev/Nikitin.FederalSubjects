@@ -22,6 +22,10 @@
     </ItemGroup>
 
     <ItemGroup>
+        <ProjectReference Include="..\Nikitin.FederalSubjects.Infrastructure\Nikitin.FederalSubjects.Infrastructure.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
         <None Remove="nlog.log" />
     </ItemGroup>
 
