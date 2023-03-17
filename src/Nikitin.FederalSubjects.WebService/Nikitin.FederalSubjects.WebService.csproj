@@ -13,6 +13,7 @@
     <ItemGroup>
         <PackageReference Include="AspNetCore.HealthChecks.UI.Client" Version="6.0.5" />
         <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="7.0.3" />
+        <PackageReference Include="Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore" Version="7.0.4" />
         <PackageReference Include="NLog" Version="5.1.2" />
         <PackageReference Include="NLog.Targets.Seq" Version="2.1.0" />
         <PackageReference Include="NLog.Web.AspNetCore" Version="5.2.2" />

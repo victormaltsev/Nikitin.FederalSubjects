@@ -38,7 +38,11 @@ public class Startup
         services.AddSwaggerGenNewtonsoftSupport();
         services.AddSwaggerGen(SwaggerGenOptions);
 
-        services.AddHealthChecks();
+        services.AddHealthChecks()
+            .AddDbContextCheck<AppDbContext>(
+                name: "PostgreSQL",
+                tags: new[] { "deep" }
+            );
     }
 
     public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
