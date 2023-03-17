@@ -1,6 +1,12 @@
 using HealthChecks.UI.Client;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
+using Nikitin.FederalSubjects.Application.Repositories;
+using Nikitin.FederalSubjects.Database;
+using Nikitin.FederalSubjects.Infrastructure.Repositories;
+using Swashbuckle.AspNetCore.SwaggerGen;
+using Swashbuckle.AspNetCore.SwaggerUI;
 
 namespace Nikitin.FederalSubjects.WebService;
 
@@ -19,12 +25,18 @@ public class Startup
 
         services.AddControllers().AddNewtonsoftJson();
 
-        services.AddSwaggerGenNewtonsoftSupport();
-        services.AddSwaggerGen(x =>
+        services.AddScoped<IFederalDistrictsRepository, FederalDistrictsRepository>();
+        services.AddScoped<IFederalSubjectsRepository, FederalSubjectsRepository>();
+        services.AddScoped<IFederalSubjectsTypesRepository, FederalSubjectsTypesRepository>();
+
+        services.AddDbContext<AppDbContext>(options =>
         {
-            x.EnableAnnotations();
-            x.SwaggerDoc("v1", new OpenApiInfo { Title = "Nikitin.FederalSubjects.WebService", Version = "v1" });
+            var connectionString = _configuration.GetConnectionString("DefaultConnection");
+            options.UseNpgsql(connectionString);
         });
+
+        services.AddSwaggerGenNewtonsoftSupport();
+        services.AddSwaggerGen(SwaggerGenOptions);
 
         services.AddHealthChecks();
     }
@@ -34,7 +46,7 @@ public class Startup
         if (env.IsDevelopment())
         {
             app.UseSwagger();
-            app.UseSwaggerUI(x => x.SwaggerEndpoint("/swagger/v1/swagger.json", "Nikitin.FederalSubjects.WebService v1"));
+            app.UseSwaggerUI(SwaggerUIOptions);
         }
         else
         {
@@ -60,5 +72,18 @@ public class Startup
                 Predicate = (check) => !check.Tags.Contains("deep")
             });
         });
+    }
+
+    private static void SwaggerGenOptions(SwaggerGenOptions options)
+    {
+        options.EnableAnnotations();
+        options.SwaggerDoc("v1", new OpenApiInfo { Title = "Nikitin.FederalSubjects.WebService", Version = "v1" });
+        options.CustomSchemaIds(x => x.GUID.ToString());
+    }
+
+    private static void SwaggerUIOptions(SwaggerUIOptions options)
+    {
+        options.SwaggerEndpoint("/swagger/v1/swagger.json", "Nikitin.FederalSubjects.WebService v1");
+        options.DefaultModelsExpandDepth(-1);
     }
 }
