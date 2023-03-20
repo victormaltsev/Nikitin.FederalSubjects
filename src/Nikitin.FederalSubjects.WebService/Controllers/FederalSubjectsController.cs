@@ -42,7 +42,12 @@ public class FederalSubjectsController : ControllerBase
     public async Task<IActionResult> GetContentAsync([FromRoute] short id)
     {
         var federalSubjectId = new FederalSubjectId(id);
-        return Ok(await _federalSubjectsRepository.GetContentAsync(federalSubjectId));
+        return new ContentResult
+        {
+            StatusCode = StatusCodes.Status200OK,
+            Content = await _federalSubjectsRepository.GetContentAsync(federalSubjectId),
+            ContentType = MediaTypeNames.Text.Html
+        };
     }
 
     private record FederalSubjectsResponse
