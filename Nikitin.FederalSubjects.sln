@@ -1,8 +1,28 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{F47D4658-1363-4C8C-886F-591A442E92A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nikitin.FederalSubjects.WebService", "src\Nikitin.FederalSubjects.WebService\Nikitin.FederalSubjects.WebService.csproj", "{FC48527E-310B-4322-9395-E13EADB829C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nikitin.FederalSubjects.WebAssembly", "src\Nikitin.FederalSubjects.WebAssembly\Nikitin.FederalSubjects.WebAssembly.csproj", "{83F2372A-03AA-403C-9FC3-C141C39D7401}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FC48527E-310B-4322-9395-E13EADB829C7} = {F47D4658-1363-4C8C-886F-591A442E92A4}
+		{83F2372A-03AA-403C-9FC3-C141C39D7401} = {F47D4658-1363-4C8C-886F-591A442E92A4}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FC48527E-310B-4322-9395-E13EADB829C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC48527E-310B-4322-9395-E13EADB829C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC48527E-310B-4322-9395-E13EADB829C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC48527E-310B-4322-9395-E13EADB829C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83F2372A-03AA-403C-9FC3-C141C39D7401}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83F2372A-03AA-403C-9FC3-C141C39D7401}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83F2372A-03AA-403C-9FC3-C141C39D7401}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83F2372A-03AA-403C-9FC3-C141C39D7401}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
