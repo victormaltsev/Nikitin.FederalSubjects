@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <base href="/" />
+
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="lib/bootstrap.min.css" />
+
+    <script type="text/javascript" src="lib/jquery.min.js"></script>
+    <script type="text/javascript" src="lib/bootstrap.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+
+    <title>Nikitin.FederalSubjects.WebAssembly</title>
+</head>
+<body>
+    <App @rendermode="@RenderMode.InteractiveWebAssembly" />
+    <div id="blazor-error-ui" class="d-none bg-danger fixed-bottom text-center text-white py-1">
+        An unhandled error has occurred.
+        <a class="text-white text-decoration-none" href=".">Reload</a>
+    </div>
+    <script type="text/javascript" src="_framework/blazor.webassembly.js"></script>
+</body>
+</html>
