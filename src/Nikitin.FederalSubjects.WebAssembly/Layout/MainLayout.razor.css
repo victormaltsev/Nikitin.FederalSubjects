@@ -6,7 +6,7 @@
 nav {
     width: 300px;
 }
-nav .nav-pills .nav-link {
+.nav-pills .nav-link {
     border-radius: unset !important;
 }
 .bi {
