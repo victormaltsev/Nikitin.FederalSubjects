@@ -1,0 +1,18 @@
+
+#map g {
+    fill: var(--bs-white);
+    fill-opacity: 1;
+    fill-rule: nonzero;
+    stroke: var(--bs-dark-bg-subtle);
+    stroke-dasharray: none;
+    stroke-miterlimit: 4;
+    stroke-linejoin: round;
+    stroke-opacity: 1;
+    stroke-width: 5.05556;
+    cursor: pointer;
+}
+
+#map path:hover {
+    fill: var(--bs-primary);
+    transition: 200ms;
+}
