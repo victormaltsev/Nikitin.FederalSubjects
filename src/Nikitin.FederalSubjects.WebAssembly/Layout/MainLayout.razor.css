@@ -1,0 +1,15 @@
+.root {
+    min-height: 100vh;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+nav {
+    width: 300px;
+}
+nav .nav-pills .nav-link {
+    border-radius: unset !important;
+}
+.bi {
+    fill: currentColor;
+    vertical-align: -.125em;
+}
