@@ -1,0 +1,12 @@
+.root {
+    min-height: 100vh;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+nav {
+    width: 300px;
+}
+.bi {
+    fill: currentColor;
+    vertical-align: -.125em;
+}
