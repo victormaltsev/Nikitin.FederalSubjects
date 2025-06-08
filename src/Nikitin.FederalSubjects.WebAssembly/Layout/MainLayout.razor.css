@@ -6,9 +6,6 @@
 nav {
     width: 300px;
 }
-.nav-pills .nav-link {
-    border-radius: unset !important;
-}
 .bi {
     fill: currentColor;
     vertical-align: -.125em;
